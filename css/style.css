@@ -1,0 +1,81 @@
+
+:root{
+    --mainfont:'Raleway', sans-serif;
+    --subfont:'Open Sans', sans-serif;
+    --brandcol:#e84545;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/* ======common css end========== */
+.rale-13{
+    font-family: var(--mainfont);
+    font-size: 13px;
+    text-transform: capitalize;
+}
+.open-reg-14{
+    font-family: var(--subfont);
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.text-upper{
+    text-transform: uppercase;
+}
+
+.text-cap{
+    text-transform: capitalize;
+}
+/* ========== common css ======== */
+
+nav{
+    height: 100px;
+}
+nav .navbar{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+nav .navbar .logo{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+nav .navbar .logo img{
+    width: 100%;
+    line-height: 100px;
+}
+nav .navbar .nav_item{
+    width: 600px;
+    height: 100px;
+}
+nav .navbar .nav_item ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+nav .navbar .nav_item ul li{
+
+}
+nav .navbar .nav_item ul li a{
+  color: rgba(255, 255, 255 ,0.75);
+}

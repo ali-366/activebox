@@ -50,8 +50,10 @@ a{
 
 nav{
     height: 100px;
-    position: relative;
     z-index: 1;
+    position: absolute;
+    top:-00%;
+    left:0px;
 }
 nav .navbar{
     height: 100px;
@@ -96,15 +98,15 @@ nav .navbar .nav_item ul li a:hover{
   /* ============banner start============= */
   #banner_bg{
       width: 100%;
-      height: 750px;
+      height: 700px;
       background-image: url(../images/banner.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      position: absolute;
       top: -100px;
       left: 0px;
       z-index: -1;
+      position: relative;
   }
   #banner_bg .overlay{
       background:rgba(43, 46, 74, 0.952);
@@ -151,15 +153,61 @@ nav .navbar .nav_item ul li a:hover{
   /* ============banner end============= */
   /* ============service start============= */
 #service{
-    height: 370px;
-    background-color: yellowgreen;
+    height: 300px;
+    height: 100%;
 }
 #service .service{
-    background-color: #5e6451;
+    display: flex;
+    flex-wrap: wrap;
 }
 #service .service .service_item{
     width: 370px;
-    height: 400px;
-    background-color: #d3d032;
+    height: 100%;
+    text-align: center;
+}
+#service .service .service_item h3{
+   font-size: 16px;
+  
+   font-weight: 700px;
+   text-transform: uppercase;
+   padding: 20px 0px;
+}
+#service .service .service_item p{
+   font-size: 13px;
+   font-family: var(--mainfont) ;
+   margin-bottom: 100px;
+   line-height: 22px;
+}
+#service .service .mid-item{
+    margin: 0px 30px;
 }
   /* ============service end============= */
+
+  /* ============hover start============= */
+  #hover{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #hover .hover_item{
+    width: 25%;
+    height: 350px;
+    position: relative;
+}
+#hover .hover_item .overlay{
+    width: 0%;
+    height: 100%;
+    background-color: rgba(248, 10, 129, 0.76);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+#hover .hover_item:hover .overlay{
+    width: 100%;
+    height: 100%;
+}
+  /* ============hover end============= */

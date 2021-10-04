@@ -185,13 +185,18 @@ nav .navbar .nav_item ul li a:hover{
 
   /* ============hover start============= */
   #hover{
+   
+  }
+  #hover .content{
+    width: 1920px;
     display: flex;
+    margin: 0 auto;
     flex-wrap: wrap;
   }
-  #hover .hover_item{
-    width: 25%;
-    height: 350px;
-    position: relative;
+  #hover .hover_item {
+	width: 24.5%;
+	height: 350px;
+	position: relative;
 }
 #hover .hover_item .overlay{
     width: 0%;
@@ -211,3 +216,142 @@ nav .navbar .nav_item ul li a:hover{
     height: 100%;
 }
   /* ============hover end============= */
+
+  /* ============blog start============= */
+  #blog{
+    margin: 50px 0px;
+  }
+  #blog .blog_items{
+      display: flex;
+}
+#blog .blog_items .items{
+      margin-left: 30px;
+}
+#blog .blog_items .items:last-child{
+   
+}
+#blog .blog_items .items h4{
+      font-size: 22px;
+      font-family:var(--mainfont);
+      text-transform: capitalize;
+      margin: 10px 0px;
+}
+#blog .blog_items .items h5{
+    font-size: 19px;
+    font-family:var(--mainfont);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: var(--brandcol);
+}
+#blog .blog_items .items p{
+    font-size: 15px;
+    font-family:var(--mainfont);
+    margin: 10px 0px;
+    line-height: 22px;
+}
+#blog .blog_items .items .social_icon{
+    display: flex;
+}
+#blog .blog_items .items .social_icon .icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+#blog .blog_items .items .social_icon .icon a {
+
+    color:#3a3a3a; ;
+}
+#blog .blog_items .items .social_icon .icon a i{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transition: all linear 0.4s;
+      transform: translate(-50%,-50%);
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+      -webkit-transition: all linear 0.4s;
+      -moz-transition: all linear 0.4s;
+      -ms-transition: all linear 0.4s;
+      -o-transition: all linear 0.4s;
+}
+
+
+#blog .blog_items .items .social_icon .icon:hover a i{
+    color: turquoise;
+}
+  /* ============blog end============= */
+  /* ============feedback start============= */
+#feedback{
+      height: 500px;
+    display: flex;
+  }
+#feedback .img_sec{
+      width: 50%;
+      height: 100%;
+}
+#feedback .comments_sec{
+    width: 50%;
+    font-family: 'Cardo', serif;
+    background: #411b31;
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    padding: 100px 100px;
+}
+#feedback .comments_sec p{
+    margin-top: 50px;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+}
+  /* ============feedback end============= */
+  /* ============down load start============= */
+#dowonload{
+height: 300px;
+}
+#dowonload .container{
+    text-align: center;
+}
+#dowonload .container h3{
+    font-size: 35px;
+    font-family: var(--mainfont);
+    margin-top: 100px;
+    font-family: var(--mainfont);
+    font-weight: 400px;
+}
+#dowonload .container h5{
+    font-size: 17px;
+    font-family: var(--mainfont);
+    padding: 10px 0px;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+#dowonload .container a{
+    font-size: 17px;
+    font-family: var(--mainfont);
+    margin-bottom: 40px;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #565658;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+#dowonload .container a:hover{
+    background: var(--brandcol);
+}
+  /* ============down load end============= */
